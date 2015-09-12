@@ -57,7 +57,7 @@ namespace{
 }
 
 int main(int argc, char** argv) {
-   
+    Binfile();
     return 0;
 }
 
