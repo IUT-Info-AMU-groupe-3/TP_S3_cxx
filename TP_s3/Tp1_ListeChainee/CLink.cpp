@@ -1,10 +1,9 @@
 #include <iostream>
 #include "ClLink.h"
-using namespace std;
 using namespace nsSdD;
 
 ClLink::ClLink(int Info = 0, ClLink* suivant = nullptr):m_Info(Info),m_Suivant(suivant){
-    cout << "construit : " << GetInfo() << endl;
+    std::cout << "construit : " << GetInfo() << std::endl;
 }
 
 
@@ -26,5 +25,5 @@ void ClLink::SetSuivant(ClLink* suivant){
 
 ClLink::~ClLink(){
     delete m_Suivant;
-    cout << "détruit : "<< GetInfo() << endl;
+    std::cout << "détruit : "<< GetInfo() << std::endl;
 }
